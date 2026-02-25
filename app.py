@@ -34,7 +34,9 @@ else:
     st.title("個人情報")
     with st.container(border=True):
         userid = st.text_input(
-            label="ユーザーID", placeholder="ユーザーIDを半角で入力してください"
+            label="ユーザーID",
+            placeholder="ユーザーIDを半角で入力してください",
+            help="CrowdWorks 表示名",
         )
         userid_re_input = st.text_input(
             label="ユーザーIDの確認",
